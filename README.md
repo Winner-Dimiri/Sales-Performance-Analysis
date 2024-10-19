@@ -2,6 +2,7 @@
 My first project in the data analysis learning pathway.
 
 ### Project Overview 
+```
 This Data Analysis project aims to generate insight into the sales performance of the E-commerce project over the past year. By analysing the various
 
 ### Data Sources
