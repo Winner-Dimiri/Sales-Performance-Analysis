@@ -3,10 +3,10 @@ My first project in the data analysis learning pathway.
 
 ### Project Overview 
 ```
-This Data Analysis project aims to generate insight into the sales performance of the E-commerce project over the past year. By analysing the various
+This Data Analysis project aims to generate insight into the sales performance of the E-commerce project over the past year. By analyzing the various
 
 ### Data Sources
-the primary source of data used here is Data that can be freely doenloaded from an opwn source online such as 
+the primary source of data used here is Data that can be freely downloaded from an open source online such as 
 
 ### Tools Used
 - Microsoft Excel [Download Here](https://www.microsoft.com) 
