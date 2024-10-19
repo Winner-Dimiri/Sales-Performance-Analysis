@@ -1,7 +1,7 @@
 # My_first_project
 My first project in the data analysis learning pathway.
 
-## 
+### Project Overview 
 This Data Analysis project aims to generate insight into the sales performance of the E-commerce project over the past year. By analysing the various
 
 ### Data Sources
@@ -23,4 +23,11 @@ In the initial phase of the Data cleaning and preparations, we perform the follo
 3. Data cleaning and formatting
 
 ### Exploratory Data Analysis
-EDA involved the exploring of the data to answer 
+EDA involves the exploring the data to answer 
+
+### Data Analysis
+This is where we include some basic lines of code or queries or even some of the DAX expressions used during your analysis;
+```SQL
+SELECT * FROM TABLE 1
+WHERE CONDITION = TRUE
+```
