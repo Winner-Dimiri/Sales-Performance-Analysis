@@ -3,7 +3,7 @@ My first project in the data analysis learning pathway.
 
 [Project Overview](#project-overview)
 
-Data Sources
+[Data Sources](#datasources)
 
 Tools Used
 
