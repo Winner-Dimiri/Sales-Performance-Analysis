@@ -7,9 +7,9 @@ My first project in the data analysis learning pathway.
 
 [Data Sources](#data-sources)
 
-[Tools Used](#tool-sused)
+[Tools Used](#tools-sused)
 
-[Data Cleaning and Preparations](#data-cleaning-and-preparation)
+[Data Cleaning and Preparations](#data-cleaning-and-preparations)
 
 ### Project Overview 
 
