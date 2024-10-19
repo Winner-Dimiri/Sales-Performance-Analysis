@@ -1,7 +1,7 @@
 # My_first_project
 My first project in the data analysis learning pathway.
 
-[Project Overview](#project - overview)
+[Project Overview](#project-overview)
 
 Data Sources
 
