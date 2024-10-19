@@ -24,7 +24,7 @@ In the initial phase of the Data cleaning and preparations, we perform the follo
 3. Data cleaning and formatting
 
 ### Exploratory Data Analysis
-EDA involves the exploring the data to answer 
+EDA involves exploring the data to answer 
 
 ### Data Analysis
 This is where we include some basic lines of code or queries or even some of the DAX expressions used during your analysis;
@@ -32,3 +32,5 @@ This is where we include some basic lines of code or queries or even some of the
 SELECT * FROM TABLE 1
 WHERE CONDITION = TRUE
 ```
+### Data Visualization
+
