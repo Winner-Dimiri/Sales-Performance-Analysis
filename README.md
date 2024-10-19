@@ -1,6 +1,8 @@
 # My_first_project
 My first project in the data analysis learning pathway.
 
+---
+
 [Project Overview](#project-overview)
 
 [Data Sources](#datasources)
@@ -41,6 +43,6 @@ WHERE CONDITION = TRUE
 ### Data Visualization
 
 | Heading 1 | Heading 2 | Heading 3|
-|-----------|-----------|----------|
+|-----------|---------|----------|
 |Table 1|Table 2|Table 3|
 
