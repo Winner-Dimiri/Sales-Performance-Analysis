@@ -1,30 +1,30 @@
-# My_first_project
-My first project in the data analysis learning pathway.
+# Sales Analysis Data
+
 
 ---
-
+Project Topic; Sales Performance Analysis
 [Project Overview](#project-overview)
-
-
-
-[Data Sources](#data-sources)
-
+[Data Source](#data-source)
 [Tools Used](#tools-used)
-
 [Data Cleaning and Preparations](#data-cleaning-and-preparations)
 
 ### Project Overview 
+This project aims to analyze product sales across different regions and customers in order to identify:
+* Top-selling products and regions
+* Underperforming areas
+* Customer purchasing patterns
+* Revenue trends over time
 
-This Data Analysis project aims to generate insight into the sales performance of the E-commerce project over the past year. By analyzing the various
+Business Task: Improving Sales Performance and Customer Retention through Regional and Product Insights
 
 ### Data Sources
-the primary source of data used here is Data that can be freely downloaded from an open source online such as 
+Capstone project dataset provided by Incubator Hub as part of the 2024 Data Analysis Training Program.
 
 ### Tools Used
 - Microsoft Excel [Download Here](https://www.microsoft.com) 
-  1.  For Data Cleaning
-  2.  For Analysis
-  3.  For Data Visualization
+Excel: Data cleaning, formatting, and preliminary analysis
+SQL: Data querying and exploration
+Tableau: Data visualization and dashboard creation.
     
 - SQL - Structured Query Language for Querying of Data
 - GitHub for Portfolio building
