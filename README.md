@@ -21,18 +21,14 @@ This project aims to analyze product sales across different regions and customer
 
 **Business Task:** Improving Sales Performance and Customer Retention through Regional and Product Insights
 
-### Data Sources
+### Data Source
 Capstone project dataset provided by Incubator Hub as part of the 2024 Data Analysis Training Program.
 
 ### Tools Used
-- Microsoft Excel [Download Here](https://www.microsoft.com) 
-Excel: Data cleaning, formatting, and preliminary analysis
-SQL: Data querying and exploration
-Tableau: Data visualization and dashboard creation.
+- Microsoft Excel: Data cleaning, formatting, and preliminary analysis
+- SQL: Data querying and exploration
+- Tableau: Data visualization and dashboard creation.
     
-- SQL - Structured Query Language for Querying of Data
-- GitHub for Portfolio building
-
 ### Data Cleaning and Preparations
 In the initial phase of the Data cleaning and preparations, we perform the following actions;
 1. Data loading and inspection
