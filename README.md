@@ -57,6 +57,14 @@ In the initial phase of the Data cleaning and preparations, I performed the foll
 
 #### Sales Performance Analysis
 Total Revenue
+Quarterly and Yearly Trends
+Top 5 Products by Revenue
+Top 3 Regions by Revenue
+
+#### Customer Analysis
+Recency, Frequency, and Monetary
+
+
 ### Data Analysis
 This is where we include some basic lines of code or queries or even some of the DAX expressions used during your analysis;
 ```SQL
