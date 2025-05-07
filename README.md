@@ -18,7 +18,7 @@ This project aims to analyze product sales across different regions and customer
 * Customer purchasing patterns
 * Revenue trends over time
 
-Business Task: Improving Sales Performance and Customer Retention through Regional and Product Insights
+**Business Task:** Improving Sales Performance and Customer Retention through Regional and Product Insights
 
 ### Data Sources
 Capstone project dataset provided by Incubator Hub as part of the 2024 Data Analysis Training Program.
