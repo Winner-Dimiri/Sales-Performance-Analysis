@@ -2,7 +2,7 @@
 
 
 ---
-Project Title: Sales Performance Analysis
+
 [Project Overview](#project-overview)
 
 [Data Source](#data-source)
@@ -12,11 +12,12 @@ Project Title: Sales Performance Analysis
 [Data Cleaning and Preparations](#data-cleaning-and-preparations)
 
 ### Project Overview 
+**Project Title:** Sales Performance Analysis
 This project aims to analyze product sales across different regions and customers in order to identify:
-* Top-selling products and regions
-* Underperforming areas
-* Customer purchasing patterns
-* Revenue trends over time
+- Top-selling products and regions
+- Underperforming areas
+- Customer purchasing patterns
+- Revenue trends over time
 
 **Business Task:** Improving Sales Performance and Customer Retention through Regional and Product Insights
 
