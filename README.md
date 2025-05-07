@@ -2,10 +2,13 @@
 
 
 ---
-Project Topic; Sales Performance Analysis
+Project Title: Sales Performance Analysis
 [Project Overview](#project-overview)
+
 [Data Source](#data-source)
+
 [Tools Used](#tools-used)
+
 [Data Cleaning and Preparations](#data-cleaning-and-preparations)
 
 ### Project Overview 
