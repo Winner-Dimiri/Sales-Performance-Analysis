@@ -11,6 +11,8 @@
 
 [Data Cleaning and Preparations](#data-cleaning-and-preparations)
 
+[Data Analysis](Data-analysis)
+
 ### Project Overview 
 **Project Title:** Sales Performance Analysis
 This project aims to analyze product sales across different regions and customers in order to identify:
@@ -30,10 +32,28 @@ Capstone project dataset provided by Incubator Hub as part of the 2024 Data Anal
 - Tableau: Data visualization and dashboard creation.
     
 ### Data Cleaning and Preparations
-In the initial phase of the Data cleaning and preparations, we perform the following actions;
+In the initial phase of the Data cleaning and preparations, I performed the following actions;
 1. Data loading and inspection
-2. Handling missing values
-3. Data cleaning and formatting 
+2. Checking for missing values
+3. Changed the data type of Quantity and UnitPrice from SMALLINT to INT to accommodate the larger values in the Revenue column to be added.
+4. Created new columns; Revenue = Quantity * UnitPrice, OrderMonth, OrderYear
+   ``` sql
+   ALTER TABLE [dbo].[LITA_Capstone]
+	ADD Revenue tinyint
+   UPDATE [dbo].[LITA_Capstone]
+	SET Revenue = Quantity * UnitPrice
+
+   ALTER TABLE [dbo].[LITA_Capstone]
+    ADD OrderYear int
+   UPDATE [dbo].[LITA_Capstone]
+    SET OrderYear = YEAR(OrderDate)
+
+   ALTER TABLE [dbo].[LITA_Capstone]
+    ADD OrderMonth int
+   UPDATE [dbo].[LITA_Capstone]
+    SET OrderMonth = Month(OrderDate)
+
+5. Data cleaning and formatting 
 
 ### Exploratory Data Analysis
 EDA involves exploring the data to answer 
