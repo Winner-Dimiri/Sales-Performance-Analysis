@@ -53,11 +53,10 @@ In the initial phase of the Data cleaning and preparations, I performed the foll
    UPDATE [dbo].[LITA_Capstone]
     SET OrderMonth = Month(OrderDate)
 
-5. Data cleaning and formatting 
+### Data Analysis
 
-### Exploratory Data Analysis
-EDA involves exploring the data to answer 
-
+#### Sales Performance Analysis
+Total Revenue
 ### Data Analysis
 This is where we include some basic lines of code or queries or even some of the DAX expressions used during your analysis;
 ```SQL
