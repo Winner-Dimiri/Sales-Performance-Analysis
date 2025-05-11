@@ -53,7 +53,8 @@ In the initial phase of the Data cleaning and preparations, I performed the foll
    UPDATE [dbo].[LITA_Capstone]
     SET OrderMonth = Month(OrderDate)
 
-### Data Analysis
+### Exploratory Data Analysis
+- Univariate Analysis: I kicked off the EDA by calculating the total quantity of products sold and the total revenue generated. [You can find the SQL query for the Univariate Analysis here](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R1-R9)
 
 #### Sales Performance Analysis
 Total Revenue
