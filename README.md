@@ -1,11 +1,11 @@
-# Sales Analysis Data
+# Sales Performance Analaysis
 
 
 ---
 
 [Project Overview](#project-overview)
 
-[Data Source](#data-source)
+[Dataset Overview](#dataset-overview)
 
 [Tools Used](#tools-used)
 
@@ -14,22 +14,45 @@
 [Data Analysis](Data-analysis)
 
 ### Project Overview 
-**Project Title:** Sales Performance Analysis
-This project aims to analyze product sales across different regions and customers in order to identify:
-- Top-selling products and regions
-- Underperforming areas
-- Customer purchasing patterns
-- Revenue trends over time
 
-**Business Task:** Improving Sales Performance and Customer Retention through Regional and Product Insights
+- **Project Title:** Sales Performance Analysis (2023–2024): Uncovering Trends and Customer Insights for Strategic Growth
 
-### Data Source
-Capstone project dataset provided by Incubator Hub as part of the 2024 Data Analysis Training Program.
+- **Project Description:** This project analyzes transactional sales data from 2023 to 2024 to discover patterns, trends, and insights that can improve business performance. The dataset captures details such as what was sold, in which region, to which customer, and at what price and quantity. The analysis will help identify high-performing products, profitable regions, sales trends over time, and key customer behaviors to inform marketing, inventory, and sales strategies.
+
+- **Business Task:** To optimize business performance by understanding sales trends, customer segments, and regional dynamics over a two-year period, thereby enabling strategic decision-making to increase revenue, customer satisfaction, and operational efficiency.
+
+- **Objectives:** The objectives of this project are:
+	1. Analyze sales performance across months, regions, and products.
+	
+ 	2. Identify sales seasonality and growth trends between 2023 and 2024.
+	
+ 	3. Segment customers based on purchase behavior.
+	
+ 	4. Determine top and underperforming products.
+	
+ 	5. Highlight regional strengths and market gaps.
+	
+ 	6. Explore pricing impact on quantity sold.
+
+### Dataset Overview
+
+- **Dataset Structure:** The dataset contains the following data fields, as described below:
+|Column    |Description|
+|----------|----------|
+|OrderID|Unique identifier for each order|
+|Customer ID|Unique identifier for each customer|
+|Product|Name of the product sold|
+|Region|Geographical region of the sale
+|OrderDate|Date of the transaction
+|Quantity|Number of units sold|
+
+- **Data Source:** he data used for this analysis is the Capstone Project Dataset provided by the Incubator Hub as part of the 2024 Data Analysis Training Program.
 
 ### Tools Used
-- Microsoft Excel: Data cleaning, formatting, and preliminary analysis
-- SQL: Data querying and exploration
-- Tableau: Data visualization and dashboard creation.
+
+- **Microsoft Excel:** for data cleaning, formatting, and preliminary analysis
+- **Structured Query Language (SQL):** For data querying and exploration
+- **Tableau:** Used for data visualization and dashboard creation.
     
 ### Data Cleaning and Preparations
 In the initial phase of the Data cleaning and preparations, I performed the following actions;
@@ -54,16 +77,19 @@ In the initial phase of the Data cleaning and preparations, I performed the foll
     SET OrderMonth = Month(OrderDate)
 
 ### Exploratory Data Analysis
-- **Univariate Analysis:** I kicked off the EDA by calculating the total quantity of products sold and the total revenue generated. [You can find the SQL query for the Univariate Analysis here](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R1-R9)
+- **Univariate Analysis:** initiated the exploratory data analysis (EDA) by calculating the total quantity of products sold and the total revenue generated.. [You can find the SQL query for the Univariate Analysis here](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R1-R9)
 
 - **Time-Based Analysis:** Understanding how revenue is generated and how it trends over time is essential for strategic decision-making. This section provides a comprehensive analysis of revenue across monthly, quarterly, and yearly intervals.
 	1. [Click here to view the query for Monthly Analysis by year](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R26-R45)
 	2. [Click here to view the query for Quarterly Analysis year](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R26-R45)
 	3. [Click here to view the query for Yearly Analysis](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R14-R24)
 
+
 - **Product Analysis:** his section delves into the quantity of products sold and the corresponding revenue generated, offering insights into their variations and trends over the year.
 	1. [See the query for the quantity sold and the revenue generated for the products here](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R70-R86)
 	2. [See the query for the quantity sold and the revenue generated for the products across the years here](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R70-R86)
+
+	From our analysis, it showed that hat had the highest number of sales with a figure of 80000 units, followed by shoes, shirts and gloves, with figures of 72500, 62500, and 62500 respectively. However, shoes generated the highest revenue, with a total revenue of 3087500, followed by shirt, hat gloves, in order, with revenue of 2450000, 1587500, and 1500000 respectivelly.
 
 - **Regional Analysis:** To evaluate regional contributions to sales and revenue generation, this section presents a detailed analysis of performance across different regions.
 	1. [For the query of quantity sold and revenue generated across the regions, click here](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R108-R121)
