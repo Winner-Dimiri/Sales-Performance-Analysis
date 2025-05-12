@@ -37,16 +37,17 @@
 ### Dataset Overview
 
 - **Dataset Structure:** The dataset contains the following data fields, as described below:
-|Column    |Description|
-|----------|----------|
-|OrderID|Unique identifier for each order|
-|Customer ID|Unique identifier for each customer|
-|Product|Name of the product sold|
-|Region|Geographical region of the sale
-|OrderDate|Date of the transaction
-|Quantity|Number of units sold|
 
-- **Data Source:** he data used for this analysis is the Capstone Project Dataset provided by the Incubator Hub as part of the 2024 Data Analysis Training Program.
+| Column      | Description                         |
+|-------------|-------------------------------------|
+| OrderID     | Unique identifier for each order    |
+| CustomerID | Unique identifier for each customer |
+| Product     | Name of the product sold            |
+| Region      | Geographical region of the sale     |
+| OrderDate   | Date of the transaction             |
+| Quantity    | Number of units sold                |
+
+- **Data Source:** the data used for this analysis is the Capstone Project Dataset provided by the Incubator Hub as part of the 2024 Data Analysis Training Program.
 
 ### Tools Used
 
@@ -54,27 +55,19 @@
 - **Structured Query Language (SQL):** For data querying and exploration
 - **Tableau:** Used for data visualization and dashboard creation.
     
-### Data Cleaning and Preparations
-In the initial phase of the Data cleaning and preparations, I performed the following actions;
-1. Data loading and inspection
-2. Checking for missing values
-3. Changed the data type of Quantity and UnitPrice from SMALLINT to INT to accommodate the larger values in the Revenue column to be added.
-4. Created new columns; Revenue = Quantity * UnitPrice, OrderMonth, OrderYear
-   ``` sql
-   ALTER TABLE [dbo].[LITA_Capstone]
-	ADD Revenue tinyint
-   UPDATE [dbo].[LITA_Capstone]
-	SET Revenue = Quantity * UnitPrice
+### Data Cleaning and Preparation
+During the data cleaning and preparation phase, I carried out the following actions:
+1. **Data loading and inspection:** Loaded the dataset and inspected its structure for inconsistencies.
+2. **Handling missing values:** Checked for missing or null values. I noticed that the dataset provided for this capstone project included sales data across two years (2023 and 2024). However, 2024 only contained data for 8 months (January to August), while 2023 had full-year data. To ensure a fair year-over-year comparison and avoid bias due to unequal time periods, I filtered the 2023 data to include only January to August. This allowed me to accurately analyze trends and performance across consistent timeframes. I considered deleting data, but opted to filter instead, preserving the original dataset for transparency and reproducibility. [View the SQL query here]()
+3. **Data Type Conversion:** Converted the data types of Quantity and UnitPrice from SMALLINT to INT to accommodate larger values in the Revenue column.
+4. **Column Creation:** Added new columns, including:
 
-   ALTER TABLE [dbo].[LITA_Capstone]
-    ADD OrderYear int
-   UPDATE [dbo].[LITA_Capstone]
-    SET OrderYear = YEAR(OrderDate)
+	1. Revenue = Quantity * UnitPrice [Click here to view the SQL query]()
 
-   ALTER TABLE [dbo].[LITA_Capstone]
-    ADD OrderMonth int
-   UPDATE [dbo].[LITA_Capstone]
-    SET OrderMonth = Month(OrderDate)
+	2. OrderMonth (Extracted month from OrderDate) [Click here to view the SQL query]()
+
+	3. OrderYear (Extracted year from OrderDate) [Click here to view the SQL query]()
+
 
 ### Exploratory Data Analysis
 - **Univariate Analysis:** initiated the exploratory data analysis (EDA) by calculating the total quantity of products sold and the total revenue generated.. [You can find the SQL query for the Univariate Analysis here](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R1-R9)
