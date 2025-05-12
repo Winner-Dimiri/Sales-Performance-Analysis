@@ -58,9 +58,10 @@
 ### Data Cleaning and Preparation
 During the data cleaning and preparation phase, I carried out the following actions:
 1. **Data loading and inspection:** Loaded the dataset and inspected its structure for inconsistencies.
-2. **Handling missing values:** Checked for missing or null values. I noticed that the dataset provided for this capstone project included sales data across two years (2023 and 2024). However, 2024 only contained data for 8 months (January to August), while 2023 had full-year data. To ensure a fair year-over-year comparison and avoid bias due to unequal time periods, I filtered the 2023 data to include only January to August. This allowed me to accurately analyze trends and performance across consistent timeframes. I considered deleting data, but opted to filter instead, preserving the original dataset for transparency and reproducibility. [View the SQL query here]()
-3. **Data Type Conversion:** Converted the data types of Quantity and UnitPrice from SMALLINT to INT to accommodate larger values in the Revenue column.
-4. **Column Creation:** Added new columns, including:
+2. **Handling Currency:** While inspecting the data, I noticed that the original dataset did not specify the currency of the Unit Prices. To avoid confusion and ensure clarity, especially in multi-regional or international scenarios, I renamed the `UnitPrice` column to `UnitPrice_NGN` to reflect that the values are in Nigerian Naira (₦). This helps to provide clearer insight into the monetary context and prevents potential misinterpretation of financial data. [View the SQL query here]()
+3. **Handling missing values:** Checked for missing or null values. I noticed that the dataset provided for this capstone project included sales data across two years (2023 and 2024). However, 2024 only contained data for 8 months (January to August), while 2023 had full-year data. To ensure a fair year-over-year comparison and avoid bias due to unequal time periods, I filtered the 2023 data to include only January to August. This allowed me to accurately analyze trends and performance across consistent timeframes. While part of this analysis considers the complete sales data for 2023, the primary focus is on the corresponding January–August timeframe to ensure a fair comparison with the available 2024 data. I considered deleting data, but opted to filter instead, preserving the original dataset for transparency and reproducibility. [View the SQL query here]()
+4. **Data Type Conversion:** Converted the data types of Quantity and UnitPrice from SMALLINT to INT to accommodate larger values in the Revenue column.
+5. **Column Creation:** for a more efficient and insightful analysis, I introduced additional derived columns, including:
 
 	1. Revenue = Quantity * UnitPrice [Click here to view the SQL query]()
 
@@ -86,7 +87,7 @@ During the data cleaning and preparation phase, I carried out the following acti
 
 - **Regional Analysis:** To evaluate regional contributions to sales and revenue generation, this section presents a detailed analysis of performance across different regions.
 	1. [For the query of quantity sold and revenue generated across the regions, click here](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R108-R121)
-	2. [For the query of quantity sold, average quantity, revenue generated, and the average revenue across the regions, click here](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R123-R142)
+	2. [For the query of quantity sold, average quantity, revenue generated, and the average revenue across the regions for the both years, click here](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R123-R142)
 
 - **Customer Analysis:** Customer purchase behavior was analyzed to identify high-value customers. Additionally, an RFM (Recency, Frequency, Monetary) segmentation was conducted to further classify and understand customer value.
 	1. [Click here to see the query for customer analysis](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R145-R148)
