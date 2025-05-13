@@ -2,6 +2,7 @@
 
 
 ---
+## Contents
 
 [Project Overview](#project-overview)
 
@@ -11,7 +12,7 @@
 
 [Data Cleaning and Preparations](#data-cleaning-and-preparations)
 
-[Data Analysis](Data-analysis)
+[Exploratory Data Analysis](exploratory-data-analysis)
 
 ### Project Overview 
 
@@ -75,29 +76,51 @@ During the data cleaning and preparation phase, I carried out the following acti
 	1. [Click here to view the SQL query for the total quantity sold](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R1-R9)
  	2. [Click here to view the SQL query for the total revenue]()
 
-- **Time-Based Analysis:** Understanding how revenue is generated and how it trends over time is essential for strategic decision-making. This section provides a comprehensive analysis of revenue across yearly, quarterly, and monthly intervals.
-	1. The yearly revenue analysis revealed a total revenue of ₦3,950,000 from January to August 2023, compared to ₦5,012,500 during the same period in 2024—reflecting a 26.9% increase in revenue.
-[Click here to view the SQL query for Yearly Analysis](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R14-R24)
- 	2. Quarterly revenue analysis shows a 58% increase in Q1 revenue, rising from ₦1,762,500 in 2023 to ₦2,775,000 in 2024. Q2 revenue also grew by 40.3%, from ₦837,500 to ₦1,175,000. However, Q3 saw a decline of 21.3%, dropping from ₦1,350,000 in 2023 to ₦1,062,500 in 2024. Overall, Q1 recorded the highest revenue growth. [Click here to view the SQL query for the year-wise quarterly analysis.](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R26-R45)
+- **Time-Based Analysis:** Understanding how sales quantity and revenue trend over time is essential for strategic decision-making. This section provides a comprehensive analysis of sales performance and revenue generation across yearly, quarterly, and monthly intervals.
+	1. The yearly revenue analysis indicates a positive growth trend, with increases observed in both sales quantity and total revenue generated.
+		| Year | Sales Quantity (Units) | Revenue Generated (₦) |
+		|------|------------------------|-----------------------|
+		| 2023 | 127,500                | 3,950,000             |
+		| 2024 | 150,000                | 5,012,500             |
+		| **Remark** | **18% Increase in Sales Quantity**| **27% Increase in Revenue** |
+		1. [Click here to view the SQL query for Yearly Revenue Analysis](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R14-R24)
+  		2. [Click here to view the SQL query for Yearly Sales Quantity Analysis]()
+ 	2. The quarterly analysis reveals growth in both quantity and revenue during Q1 and Q2, with Q1 recording the highest performance. However, Q3 experienced a decline in both metrics. A summary of these trends is presented in the table below.
+  
+		| Quarter | 2023 Sales Quantity (Units) | 2024 Sales Quantity (Units) | Remark 	    	| 2023 Revenue (₦) | 2024 Revenue (₦) | Remark 	       |
+		|---------|-----------------------------|-----------------------------|-----------------|------------------|------------------|----------------|
+		| Q1	  | 55,000			| 72,500     	              | 31.8% Increase  | 1,762,500	   | 2,775,000	      | 57.4% Increase | 
+		| Q2	  | 32,500		   	| 47,500		      | 46.2% Increase	| 837,500          | 1,175,000	      | 40.2% Increase | 
+		| Q3	  | 40,000			| 30,000		      | 25% Decrease	| 1,350,000        | 1,062,500	      | 21.3% Decrease |
+		1. [Click here to view the SQL query for the year-wise quarterly Sales Quantity analysis]()
+     		2. [Click here to view the SQL query for the year-wise quarterly Revenue analysis.]()
   	3. Further monthly analysis revealed a 25% revenue decline in May, dropping from ₦300,000 in 2023 to ₦225,000 in 2024. A more significant drop occurred in July, with revenue dropping from ₦1,200,000 in 2023 to ₦187,500 in 2024—a decrease of 84.4%. Conversely, January 2024 saw the highest increase, with revenue rising by 300%, from ₦250,000 in 2023 to ₦1,000,000. [Click here to view the SQL query for the year-wise monthly analysis](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R26-R45)
 	
-- **Product Analysis:** This section explores the quantity of products sold and the corresponding revenue generated, highlighting trends and variations over the year. The analysis identified shoes, hats, and shirts as the top-selling products by both quantity and revenue. However, shirt sales and revenue declined over time. While shoes and shirts generated the highest revenues; ₦3,087,500 and ₦2,450,000 respectively—contributing 34% and 27% of total revenue, hats recorded the highest growth, increasing from ₦262,500 in 2023 to ₦1,150,000 in 2024, a 338% rise. Socks, though the lowest-selling product, showed growth in both quantity sold and revenue between 2023 and 2024.
+- **Product Analysis:** This section explores the quantity of products sold and the corresponding revenue generated, highlighting trends and variations over the year. The analysis identified shoes, hats, and shirts as the top-selling products by both quantity and revenue. However, shirt sales and revenue declined over time. While shoes and shirts generated the highest revenues; ₦3,087,500 and ₦2,450,000 respectively—contributing 34% and 27% of total revenue, hats recorded the highest growth, increasing from ₦262,500 in 2023 to ₦1,150,000 in 2024, a 338% rise. Socks, though the lowest-selling product, showed growth in both quantity sold and revenue between 2023 and 2024. The trends are shown below.
+
+  |Product | 2023 Sales Quantity (Units) | 2024 Sales Quantity (Units) | Remark 	| 2023 Generated Revenue (₦)  | 2024 Generated Revenue (₦) | Remark 	      |
+  |--------|-----------------------------|-----------------------------|----------------|-----------------------------|----------------------------|------------------|
+  | Shoes  | 35,000	                 | 37,500	               | 7.1% Increase  | 1,400,000	              | 1687500		           | 20.5% Increase   |
+  | Hat	 | 17,500	                 | 45,000	               | 157% Increase  | 262,500		      | 1150000		           | 338.1% Increase  |
+  | Shirt  | 42,500	                 | 20000	               | 53.6% Decrease | 1,450,000	              | 1000000		           | 31% Decrease     |
+  | Gloves | 20,000	                 | 30,000	               | 50% Increase   | 500,000		      | 750,000		           | 50% Increase     |
+  | Jacket | 5,000	                 | 7,500	               | 33.3% Increase | 300,000		      | 225000		           | 25% Decrease     |
+  | Socks  | 7,500  	                 | 10,000	               | 33.3% Increase | 37,500		      | 200,000		           | 433.33% Increase |
 	1. [Click here to view the query for product-wise quantity sold and revenue generated](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R70-R86)
 	2. [Click here for the SQL query showing product sales and revenue across the years](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R70-R86)
 
 - **Regional Analysis:** To evaluate regional contributions to sales and revenue generation, this section provides a detailed performance analysis across different regions. The South region recorded the highest sales and revenue, with 45,000 units and ₦1,750,000 in 2023, increasing to 55,000 units and ₦2,250,000 in 2024—a 28.57% revenue growth. In contrast, the East region had the lowest performance, with a decline from 47,500 units and ₦1,462,500 in 2023 to 40,000 units and ₦462,500 in 2024, resulting in a 68% drop in revenue.
+
+  |Region | 2023 Sales Quantity (Units) | 2024 Sales Quantity (Units) | Remark 	       | 2023 Generated Revenue | 2024 Generated Revenue | Remark 	   |
+  |-------|-----------------------------|-----------------------------|----------------|------------------------|------------------------|-----------------|
+  | South | 45,000	                | 55,000		      | 22.2% Increase | 1,750,000	        | 2,250,000		 | 28.6% Increase  |
+  | North | 17,500	                | 27,500		      | 57.1% Increase | 550,000	        | 1,225,000		 | 122.7% Increase |
+  | West  | 17,500	                | 27,500		      | 57.1% Increase |187,500	                | 1,075,000		 | 473.3% Increase |
+  | East  | 47,500	                | 40,000		      | 15% Decrease   | 1,462,500		| 462,500		 | 68.4% Decrease  |
+	
+  
 	1. [Click here to view the SQL query of quantity sold and revenue generated across the regions](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R108-R121)
 	2. [Click here to view the SQL query showing the quantity sold, average quantity, revenue generated, and average revenue across regions for both years](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R123-R142)
-
-- **Customer Analysis:** Customer purchase behavior was analyzed to identify high-value customers. Additionally, an RFM (Recency, Frequency, Monetary) segmentation was conducted to further classify and understand customer value.
-	1. [Click here to see the query for customer analysis](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R145-R148)
-	2.  [Click here to see the query for RFM segmentation](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R151-R196)
-
-
-Total Revenue
-Quarterly and Yearly Trends
-Top 5 Products by Revenue
-Top 3 Regions by Revenue
 
 #### Recommendation
 From the analysis, January has the highest sales, therefore more inventory should be stocked to increase sales.
