@@ -10,9 +10,13 @@
 
 [Tools Used](#tools-used)
 
-[Data Cleaning and Preparations](#data-cleaning-and-preparations)
+[Data Cleaning and Preparation](#data-cleaning-and-preparation)
 
 [Exploratory Data Analysis](exploratory-data-analysis)
+
+[Conclusion](conclusion)
+
+[Recommendations](recommendations)
 
 ### Project Overview 
 
@@ -126,15 +130,4 @@ During the data cleaning and preparation phase, I carried out the following acti
 From the analysis, January has the highest sales, therefore more inventory should be stocked to increase sales.
 
 
-### Data Analysis
-This is where we include some basic lines of code or queries or even some of the DAX expressions used during your analysis;
-```SQL
-SELECT * FROM TABLE 1
-WHERE CONDITION = TRUE
-```
-### Data Visualization
-
-| Heading 1 | Heading 2 | Heading 3|
-|-----------|---------|----------|
-|Table 1|Table 2|Table 3|
 
