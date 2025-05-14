@@ -89,8 +89,9 @@ During the data cleaning and preparation phase, I carried out the following acti
 		| 2024       | 150,000                           | 5,012,500                   |
 		| **Remark** | **18% Increase in Sales Quantity**| **27% Increase in Revenue** |
 
-		1. [Click here to view the SQL query for Yearly Revenue Analysis](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R14-R24)
-  		2. [Click here to view the SQL query for Yearly Sales Quantity Analysis]()
+		1. [Click here to view the SQL query for Yearly Sales Quantity Analysis]()
+		2. [Click here to view the SQL query for Yearly Revenue Analysis](https://github.com/Winner360/My_first_project/commit/cab5f0b5795d1c3fa58a4aa3eb3130fba9556cea#diff-1141c2a523c288033ac1fa3586afe07776e9195c449c74722b2544a9eb9c6237R14-R24)
+  		
  	3. The quarterly analysis reveals growth in both quantity and revenue during Q1 and Q2, with Q1 recording the highest performance. However, Q3 experienced a decline in both metrics. A summary of these trends is presented in the table below.
   
 		| Quarter | 2023 Sales Quantity (Units) | 2024 Sales Quantity (Units) | Remark 	    	| 2023 Generated Revenue (₦) | 2024 Generated Revenue (₦) | Remark 	   |
