@@ -266,7 +266,7 @@ GROUP BY
 		WHEN OrderYear = '2023' THEN 2023 ELSE 2024
 	END
 
----- By Quarter: calculating the total quantity and revenue for the two years (2023 and 2024)
+-- By Quarter: calculating the total quantity and revenue for the two years (2023 and 2024)
 WITH SalesData AS (
     SELECT 
         OrderYear,
@@ -290,7 +290,7 @@ SELECT
 GROUP BY Quarter
 ORDER BY Quarter
 
----- By Month: calculating the total quantity and revenue for the two years (2023 and 2024)
+-- By Month: calculating the total quantity and revenue for the two years (2023 and 2024)
 WITH Year2023 AS (
 	SELECT OrderMonth, SUM(Quantity) AS MonthlyQuantity2023, SUM(Revenue_NGN) AS MonthlyRevenue_NGN2023
 	FROM LITA_Capstone
