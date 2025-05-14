@@ -185,7 +185,7 @@ ON r.Product = q.Product
 ORDER BY r.TotalRevenue_NGN DESC
 
 
--- We want to calculate in this section the quantities sold and generated revenue per year.
+-- We want to calculate in this section, the quantities sold and generated revenue for the products per year.
 WITH Product_Data2023 AS (
 	SELECT Product, SUM(Quantity) AS Quantity_Sold2023, SUM(Revenue_NGN) AS GeneratedRevenue_NGN2023
 	FROM #FILTERED_SDATA
@@ -212,7 +212,7 @@ Group by OrderDate, UnitPrice
 
 --------------- REGIONAL ANALYSIS
 
--- Calculating the total quantity sold and generated revenue for the two sales years, 2023 and 2024 (Jan. to Aug.)
+-- Calculating the regional total quantity sold and generated revenue for the two sales years, 2023 and 2024 (Jan. to Aug.)
 WITH RegionalRevenue_NGN AS (
 	SELECT Region, SUM(Revenue_NGN) AS GeneratedRevenue_NGN
 	FROM #FILTERED_SDATA
@@ -229,7 +229,7 @@ JOIN Regional_Quantity AS q
 ON r.Region = q.Region
 ORDER BY r.GeneratedRevenue_NGN DESC
 
--- In this section we calculate the Quantity Sold, Average Quantity Sold, Generated Revenue and Average Revenue for the Regions Over the two sales years (2023 - 2024).
+-- In this section we calculate the regional Quantity Sold, Average Quantity Sold, Generated Revenue and Average Revenue for the Regions Over the two sales years (2023 - 2024).
 WITH Regional_Data2023 AS (
 	SELECT Region, SUM(Quantity) AS QuantitySold2023, AVG(Quantity) AS AverageQuantity2023, 
 		SUM(Revenue_NGN) AS GeneratedRevenue_NGN2023, AVG(Revenue_NGN) AS AverageRevenue_NGN2023
@@ -253,7 +253,7 @@ ORDER BY GeneratedRevenue_NGN2024 DESC
 
 	 
 --------------- ANALYSIS WITH THE FULL 2023 YEAR (JANUARY TO DECEMBER)
--- Calculating the total quantity and total Revenue for the two years (2023 and 2024)
+-- Calculating the total quantity and total Revenue for the two years (2023 full year and 2024 January to August)
 SELECT 
 	CASE 
 		WHEN OrderYear = '2023' THEN 2023 ELSE 2024 
@@ -266,7 +266,7 @@ GROUP BY
 		WHEN OrderYear = '2023' THEN 2023 ELSE 2024
 	END
 
--- By Quarter: calculating the total quantity and revenue for the two years (2023 and 2024)
+-- By Quarter: calculating the total quantity and revenue for the two years (2023 full year and 2024 January to August)
 WITH SalesData AS (
     SELECT 
         OrderYear,
@@ -290,7 +290,7 @@ SELECT
 GROUP BY Quarter
 ORDER BY Quarter
 
--- By Month: calculating the total quantity and revenue for the two years (2023 and 2024)
+-- By Month: calculating the total quantity and revenue for the two years (2023 full year and 2024 January to August)
 WITH Year2023 AS (
 	SELECT OrderMonth, SUM(Quantity) AS MonthlyQuantity2023, SUM(Revenue_NGN) AS MonthlyRevenue_NGN2023
 	FROM LITA_Capstone
