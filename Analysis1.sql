@@ -55,7 +55,7 @@ FROM #FILTERED_SDATA
 
 
 --------------- TIME-BASED ANALYSIS
--- In this section, we calculate the revenue generated and quantity sold by Year, Quarter, and Month for the years (Jan. to Aug.)
+-- In this section, we calculate the revenue generated and quantity sold by Year, Quarter, and Month for the years 2023 and 2024 (Jan. to Aug.)
 
 ---- Quantity Sold By Year
 SELECT 
@@ -165,7 +165,7 @@ ORDER BY f.OrderMonth
 --------------- PRODUCT ANALYSIS
 -- An analysis of the products is done in this section to know the quantities of the products sold and the revenue generated.
 
--- We want to calculate the total quantity sold and total revenue generated for the products in the years (January to August)
+-- We want to calculate the total quantity sold and total revenue generated for the products in the years 2023 and 2024 (January to August)
 WITH Revenue_Generated AS (
 	SELECT 
 		Product, 
@@ -211,6 +211,8 @@ Group by OrderDate, UnitPrice
 
 
 --------------- REGIONAL ANALYSIS
+
+-- Calculating the total quantity sold and generated revenue for the two sales years, 2023 and 2024 (Jan. to Aug.)
 WITH RegionalRevenue_NGN AS (
 	SELECT Region, SUM(Revenue_NGN) AS GeneratedRevenue_NGN
 	FROM #FILTERED_SDATA
@@ -249,4 +251,63 @@ JOIN Regional_Data2024 AS s
 ON f.Region = s.Region
 ORDER BY GeneratedRevenue_NGN2024 DESC
 
+	 
+--------------- ANALYSIS WITH THE FULL 2023 YEAR (JANUARY TO DECEMBER)
+-- Calculating the total quantity and total Revenue for the two years (2023 and 2024)
+SELECT 
+	CASE 
+		WHEN OrderYear = '2023' THEN 2023 ELSE 2024 
+	END AS SalesYear,
+	SUM(Quantity) AS TotalQuantity,
+	SUM(Revenue_NGN) AS TotalRevenue_NGN
+FROM LITA_Capstone_New
+GROUP BY 
+	CASE 
+		WHEN OrderYear = '2023' THEN 2023 ELSE 2024
+	END
 
+---- By Quarter: calculating the total quantity and revenue for the two years (2023 and 2024)
+WITH SalesData AS (
+    SELECT 
+        OrderYear,
+        CASE 
+            WHEN OrderMonth BETWEEN 1 AND 3 THEN 'Quarter_1'
+            WHEN OrderMonth BETWEEN 4 AND 6 THEN 'Quarter_2'
+            WHEN OrderMonth BETWEEN 7 AND 9 THEN 'Quarter_3'
+            ELSE 'Quarter_4'
+        END AS Quarter,
+	Quantity,
+        Revenue_NGN
+    FROM LITA_Capstone_New
+)
+SELECT
+    Quarter,
+    SUM(CASE WHEN OrderYear = '2023' THEN Quantity ELSE 0 END) AS Quantity_2023,
+    COALESCE(CAST(SUM(CASE WHEN OrderYear = '2024' THEN Quantity ELSE NULL END) AS VARCHAR),' ') AS Quantity_2024, 
+	SUM(CASE WHEN OrderYear = '2023' THEN Revenue_NGN ELSE 0 END) AS Revenue_NGN2023,
+    COALESCE(CAST(SUM(CASE WHEN OrderYear = '2024' THEN Revenue_NGN ELSE NULL END) AS VARCHAR),' ') AS RevenueNGN_2024 
+	FROM SalesData
+GROUP BY Quarter
+ORDER BY Quarter
+
+---- By Month: calculating the total quantity and revenue for the two years (2023 and 2024)
+WITH Year2023 AS (
+	SELECT OrderMonth, SUM(Quantity) AS MonthlyQuantity2023, SUM(Revenue_NGN) AS MonthlyRevenue_NGN2023
+	FROM LITA_Capstone
+	WHERE OrderYear = '2023'
+	GROUP BY OrderMonth 
+	),
+Year2024 AS (
+	SELECT OrderMonth, SUM(Quantity) AS MonthlyQuantity2024, SUM(Revenue_NGN) AS MonthlyRevenue_NGN2024
+	FROM LITA_Capstone
+	WHERE OrderYear = '2024'
+	GROUP BY OrderMonth
+	)
+SELECT 
+	f.OrderMonth, f.MonthlyQuantity2023, f.MonthlyRevenue_NGN2023, 
+	COALESCE(CAST(s.MonthlyQuantity2024 AS VARCHAR), ' ') AS MonthlyQuantity2024, 
+	COALESCE(CAST(s.MonthlyRevenue_NGN2024 AS VARCHAR), ' ') AS MonthlyRevenue_NGN2024
+FROM Year2023 AS f
+LEFT JOIN Year2024 AS s
+ON f.OrderMonth = s.OrderMonth
+ORDER BY f.OrderMonth
