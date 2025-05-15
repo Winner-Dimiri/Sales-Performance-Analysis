@@ -116,7 +116,7 @@ During the data cleaning and preparation phase, I carried out the following acti
   | Shirt  | 42,500	                 | 20000	               | 53.6% Decrease | 1,450,000	              | 1000000		           | 31% Decrease     |
   | Gloves | 20,000	                 | 30,000	               | 50% Increase   | 500,000		      | 750,000		           | 50% Increase     |
   | Jacket | 5,000	                 | 7,500	               | 33.3% Increase | 300,000		      | 225000		           | 25% Decrease     |
-  | Socks  | 7,500  	                 | 10,000	               | 33.3% Increase | 37,500		      | 200,000		           | 433.33% Increase |
+  | Socks  | 7,500  	                 | 10,000	               | 33.3% Increase | 37,500		      | 200,000		           | 433.3% Increase |
   
 	1. [Click here to view the SQL query for product-wise quantity sold and revenue generated](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L168-L185)
 	2. [Click here for the SQL query showing product sales and revenue across the years](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L188-L210)
@@ -154,11 +154,43 @@ During the data cleaning and preparation phase, I carried out the following acti
 		[Click here to view the SQL Query](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L293-L313)
 
 ### Visualizations
+A dashboard illustrating comparative monthly and quarterly revenue trends for 20323 and 2024 (January to August).
 
 
 
 ### Insights
+- **Time-based Performance**
+	- Sales and revenue exhibited a positive year-on-year growth trend, reflecting improved business performance and customer engagement.
+	- Q1 delivered the highest performance in both revenue and sales volume, indicating a strong start to the year. In contrast, Q3 experienced a notable decline in both metrics, signaling a potential area for further investigation.
+	- February emerged as the top-performing month in revenue and second in quantity sold in 2023. Its performance further improved in 2024.
+	- July was the highest in quantity sold and second in revenue in 2023 but dropped drastically in 2024, with an 84.4% decline, making it the second-lowest revenue month.
+	- March, April, and May showed the weakest performance, with April recording the lowest revenue and March the lowest sales volume.
+	- January 2024 stood out with a 300% growth rate, highlighting a strong beginning and a key opportunity for seasonal strategies.
 
+- **Product Performance**	
+	- Shoes, hats, and shirts were the top-selling products by both revenue and quantity. Shoes and shirts generated 34.5% and 27.3% of total revenue, contributing 26.13% and 22.52% of total sales, respectively. However, Shirts experienced a gradual decline in both sales and revenue over time.
+	- Hats recorded the highest year-on-year growth with a 338% increase, demonstrating improved marketing.
+	- Socks, though the lowest-selling product, 2.65% of revenue and 6.31% of sales, showed an improvement, with a 33.3% increase in sales and a 433.3% increase in revenue between 2023 and 2024.
+
+- **Regional Performance**
+	- The South region emerged as the highest-performing region in both sales and revenue generation.
+	- The North and West regions recorded significant year-on-year growth across both sales and revenue, suggesting rising market potential or improved distribution efforts.
+	- The East region had the lowest performance and experienced a considerable drop in revenue, calling for targeted intervention or strategic reevaluation.
+
+According to the complete 2023 dataset,  Q4 saw a 4.61% decline, with a short-lived uptick in October, followed by a drop in November and December.
+
+  1. Overall, sales and revenue demonstrated a positive year-on-year growth trend.
+  2. The first quarter recorded the highest performance in both revenue generation and sales volume, indicating a strong start to the year. In contrast, the third quarter experienced a notable decline across both metrics, highlighting a potential area for further investigation.
+  3. February emerged as the top-performing month in revenue generation and ranked second in quantity sold in 2023. July followed as the second highest in revenue and recorded the highest quantity sold. However, in 2024, while February saw an increase, July experienced a significant decline, dropping by 84.4% and becoming the second lowest in revenue generation.
+March, April, and May consistently reflected the lowest performance across both revenue and sales. Among these, April recorded the lowest revenue, while March had the lowest sales volume. Notably, January stood out with the highest growth, showing a remarkable 300% increase, indicating a strong start to the year.
+
+- **Product-wise:** Shoes, hats, and shirts as the top-selling products by both quantity and revenue. However, shirt sales and revenue declined over time. While shoes and shirts generated the highest revenues; 34.5% and 27.3% of total revenue repectively and 26.13% and 22.52$ of total sales respectively, hats recorded the highest growth across the year, with a 338% rise. Socks, though the lowest-selling product, 2.65 of total revenue and 6.31% of sales, showed growth in both quantity sold and revenue between 2023 and 2024 with 33.3% increase in sales and 433.3% increase in revenue.
+
+Shoes, hats, and shirts were the top-selling products in both quantity and revenue. However, while shoes and shirts contributed the most to total revenue - 34.5% and 27.3%, respectively, and accounted for 26.13% and 22.52% of total sales, shirt sales and revenue declined over time. Although socks was the lowest-selling product, contributing only 2.65% of total revenue and 6.31% of total sales, it showed notable improvement between 2023 and 2024, with a 33.3% increase in sales and an impressive 433.3% increase in revenue.
+
+- **Regional:** The South region emerged as the highest-performing in both sales and revenue generation. However, the North and West regions experienced significant growth in both metrics over the years. In contrast, the East region was the lowest-performing and recorded a notable decline in revenue generation.
+- Analysis of the complete 2023 dataset revealed a 4.61% decline in Q4 performance. Additionally, sales and revenue increased from September to October, followed by a decline in both metrics from November to December.
+  
 
 ### Recommendation
 - Offer seasonal discounts or campaigns in Q3 to mitigate the annual mid-year sales drop.
