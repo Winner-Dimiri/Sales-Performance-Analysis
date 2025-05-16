@@ -154,7 +154,12 @@ During the data cleaning and preparation phase, I carried out the following acti
 		[Click here to view the SQL Query](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L293-L313)
 
 ### Visualizations
-A dashboard illustrating comparative monthly and quarterly revenue trends for 20323 and 2024 (January to August).
+- A dashboard illustrating comparative monthly and quarterly revenue trends for 2023 and 2024 (January to August)
+
+![Tableau Dashboard](https://github.com/user-attachments/assets/ec8acb73-d923-4ffc-92f9-dc4cdece5a32)
+
+- [Click for for the full compara
+
 
 
 
@@ -175,36 +180,18 @@ A dashboard illustrating comparative monthly and quarterly revenue trends for 20
 - **Regional Performance**
 	- The South region emerged as the highest-performing region in both sales and revenue generation.
 	- The North and West regions recorded significant year-on-year growth across both sales and revenue, suggesting rising market potential or improved distribution efforts.
-	- The East region had the lowest performance and experienced a considerable drop in revenue, calling for targeted intervention or strategic reevaluation.
-
-According to the complete 2023 dataset,  Q4 saw a 4.61% decline, with a short-lived uptick in October, followed by a drop in November and December.
-
-  1. Overall, sales and revenue demonstrated a positive year-on-year growth trend.
-  2. The first quarter recorded the highest performance in both revenue generation and sales volume, indicating a strong start to the year. In contrast, the third quarter experienced a notable decline across both metrics, highlighting a potential area for further investigation.
-  3. February emerged as the top-performing month in revenue generation and ranked second in quantity sold in 2023. July followed as the second highest in revenue and recorded the highest quantity sold. However, in 2024, while February saw an increase, July experienced a significant decline, dropping by 84.4% and becoming the second lowest in revenue generation.
-March, April, and May consistently reflected the lowest performance across both revenue and sales. Among these, April recorded the lowest revenue, while March had the lowest sales volume. Notably, January stood out with the highest growth, showing a remarkable 300% increase, indicating a strong start to the year.
-
-- **Product-wise:** Shoes, hats, and shirts as the top-selling products by both quantity and revenue. However, shirt sales and revenue declined over time. While shoes and shirts generated the highest revenues; 34.5% and 27.3% of total revenue repectively and 26.13% and 22.52$ of total sales respectively, hats recorded the highest growth across the year, with a 338% rise. Socks, though the lowest-selling product, 2.65 of total revenue and 6.31% of sales, showed growth in both quantity sold and revenue between 2023 and 2024 with 33.3% increase in sales and 433.3% increase in revenue.
-
-Shoes, hats, and shirts were the top-selling products in both quantity and revenue. However, while shoes and shirts contributed the most to total revenue - 34.5% and 27.3%, respectively, and accounted for 26.13% and 22.52% of total sales, shirt sales and revenue declined over time. Although socks was the lowest-selling product, contributing only 2.65% of total revenue and 6.31% of total sales, it showed notable improvement between 2023 and 2024, with a 33.3% increase in sales and an impressive 433.3% increase in revenue.
-
-- **Regional:** The South region emerged as the highest-performing in both sales and revenue generation. However, the North and West regions experienced significant growth in both metrics over the years. In contrast, the East region was the lowest-performing and recorded a notable decline in revenue generation.
+	- The East region had the lowest performance and experienced a considerable drop in revenue, signaling strategic reevaluation.
 - Analysis of the complete 2023 dataset revealed a 4.61% decline in Q4 performance. Additionally, sales and revenue increased from September to October, followed by a decline in both metrics from November to December.
-  
 
-### Recommendation
-- Offer seasonal discounts or campaigns in Q3 to mitigate the annual mid-year sales drop.
-- Leverage the strong performance in Q1 and February by introducing new product lines in these months.
-- Investigate July's poor performance in 2024 to understand underlying factors.
+### Recommendations
+- Investigate and address the Q3 and July performance dip.
+- Leverage the strong performance in Q1 by introducing new product lines in these months.
 - Expand marketing efforts and inventory in the West region to harness its evident growth trajectory.
-- Invest more in hats and socks, which have shown notable growth, to maximize future revenue potential and diversify top-performing products.
-- Reinforce sales and distribution channels in the South and North, which are proven strongholds.
-- Revitalize shirt sales through product innovation, bundle offers, or targeted promotions to reverse the declining trend.
+- Expand and optimize sales and distribution in high-performing South and North regions..
+- Investigate and revitalize the East region with localized strategies and market research.
+- Invest more in hats and socks, which have shown notable growth, to maximize revenue.
+- Revivee shirt sales through product innovation, bundle offers, or targeted promotions to reverse the declining trend.
 
-
-
-
-From the analysis, January has the highest sales, therefore more inventory should be stocked to increase sales.
 
 
 
