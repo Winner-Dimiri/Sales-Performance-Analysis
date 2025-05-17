@@ -70,11 +70,12 @@ During the data cleaning and preparation phase, I carried out the following acti
 
 	1. Revenue = Quantity * UnitPrice [Click here to view the SQL query](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L23-L31)
 
-	2. OrderMonth (Extracted month from OrderDate) [Click here to view the SQL query](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L33-L37)
+	2. OrderYear (Extracted year from OrderDate) [Click here to view the SQL query](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L33-L37)
 
-	3. OrderYear (Extracted year from OrderDate) [Click here to view the SQL query](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L16-L21)
+  	3. OrderMonth (Extracted month from OrderDate) [Click here to view the SQL query](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L39-L43)
 
 ### Exploratory Data Analysis
+
 - **Univariate Analysis:** I initiated the exploratory data analysis by calculating the total quantity of products sold and total revenue generated from January to August, 2023 and 2024, resulting in 277,500 units sold and ₦8,962,500 in total revenue.
 	1. [Click here to view the SQL query for the total quantity sold](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L47-L50)
  	2. [Click here to view the SQL query for the total revenue](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L47-L50)
@@ -104,7 +105,7 @@ During the data cleaning and preparation phase, I carried out the following acti
   
   	3. Further monthly analysis revealed a 25% revenue decline in May, dropping from ₦300,000 in 2023 to ₦225,000 in 2024. A more significant drop occurred in July, with revenue dropping from ₦1,200,000 in 2023 to ₦187,500 in 2024—a decrease of 84.4%. Conversely, January 2024 saw the highest increase, with revenue rising by 300%, from ₦250,000 in 2023 to ₦1,000,000.
 
-		[Click here to view the SQL query for the year-wise monthly analysis](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L124-L162)
+		[Click here to view the SQL query for the year-wise monthly sales quantity and generated revenue](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L124-L162)
 	
 - **Product Analysis:** This section explores the quantity of products sold and the corresponding revenue generated, highlighting trends and variations over the year. The analysis identified shoes, hats, and shirts as the top-selling products by both quantity and revenue. However, shirt sales and revenue declined over time. While shoes and shirts generated the highest revenues; ₦3,087,500 and ₦2,450,000 respectively, contributing 34% and 27% of total revenue, hats recorded the highest growth, increasing from ₦262,500 in 2023 to ₦1,150,000 in 2024, a 338% rise. Socks, though the lowest-selling product, showed growth in both quantity sold and revenue between 2023 and 2024. The trends are shown below.
 
@@ -118,7 +119,7 @@ During the data cleaning and preparation phase, I carried out the following acti
   | Socks  | 7,500  	                 | 10,000	               | 33.3% Increase | 37,500		      | 200,000		           | 433.3% Increase |
   
 	1. [Click here to view the SQL query for product-wise quantity sold and revenue generated](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L168-L185)
-	2. [Click here for the SQL query showing product sales and revenue across the years](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L188-L210)
+	2. [Click here for the SQL query for the product sales quantity and revenue across the years](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L188-L210)
 
 - **Regional Analysis:** To evaluate regional contributions to sales and revenue generation, this section provides a detailed performance analysis across different regions. The South region recorded the highest sales and revenue while the East region had the lowest performance. The analysis is summarized below.
 
