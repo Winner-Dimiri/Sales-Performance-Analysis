@@ -12,7 +12,7 @@
 
 [Data Cleaning and Preparation](#data-cleaning-and-preparation)
 
-[Exploratory Data Analysis](exploratory-data-analysis)
+[Exploratory Data Analysis](@exploratory-data-analysis)
 
 [Visualizations](#visualizations)
 
@@ -73,7 +73,6 @@ During the data cleaning and preparation phase, I carried out the following acti
 	2. OrderMonth (Extracted month from OrderDate) [Click here to view the SQL query](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L33-L37)
 
 	3. OrderYear (Extracted year from OrderDate) [Click here to view the SQL query](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L16-L21)
-
 
 ### Exploratory Data Analysis
 - **Univariate Analysis:** I initiated the exploratory data analysis by calculating the total quantity of products sold and total revenue generated from January to August, 2023 and 2024, resulting in 277,500 units sold and ₦8,962,500 in total revenue.
@@ -163,9 +162,6 @@ During the data cleaning and preparation phase, I carried out the following acti
 - [Clich here to view the Comparative Quantity Trends (Jan–Aug): 2023 vs 2024](https://public.tableau.com/app/profile/winner.dimiri/viz/Sales_Analysis_Visualizations3/ComparativeQuantityTrendsJanAug2023vs2024)
 - [Click here to view the Product Performance Overview (Jan - Aug)](https://public.tableau.com/app/profile/winner.dimiri/viz/Sales_Analysis_Visualizations4/ProductPerformanceOverviewJan-Aug)
 - [Click here to view the Comparative Revenue Trends: 2023 (Complete dataset) vs 2024](https://public.tableau.com/app/profile/winner.dimiri/viz/Sales_Analysis_Visualizations5/ComparativeRevenueTrends2023vs2024)
-
-
-
 
 ### Insights
 - **Time-based Performance**
