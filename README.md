@@ -14,11 +14,11 @@
 
 [Exploratory Data Analysis](exploratory-data-analysis)
 
-[Visualizations](visualizations)
+[Visualizations](#visualizations)
 
-[Insights](insights)
+[Insights](#insights)
 
-[Recommendations](recommendations)
+[Recommendations](#recommendations)
 
 ### Project Overview 
 
@@ -75,7 +75,7 @@ During the data cleaning and preparation phase, I carried out the following acti
 	3. OrderYear (Extracted year from OrderDate) [Click here to view the SQL query](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L16-L21)
 
 
-### Exploratory Data Analysis (EDA)
+### Exploratory Data Analysis
 - **Univariate Analysis:** I initiated the exploratory data analysis by calculating the total quantity of products sold and total revenue generated from January to August, 2023 and 2024, resulting in 277,500 units sold and ₦8,962,500 in total revenue.
 	1. [Click here to view the SQL query for the total quantity sold](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L47-L50)
  	2. [Click here to view the SQL query for the total revenue](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L47-L50)
