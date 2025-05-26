@@ -80,7 +80,7 @@ During the data cleaning and preparation phase, I carried out the following acti
 
 	![Univariate](https://github.com/user-attachments/assets/42a2d6be-6c4c-427e-b773-255a82e61cad)
 
-	[Click here to view the SQL query](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L47-L50)
+	[Click here to view the SQL query](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L47-L50)
  	
 
 - **Time-Based Analysis:** Understanding how sales quantity and revenue trend over time is essential for strategic decision-making. This section provides a comprehensive analysis of sales performance and revenue generation across yearly, quarterly, and monthly intervals.
@@ -88,7 +88,7 @@ During the data cleaning and preparation phase, I carried out the following acti
 	
  		![Yearly Quantity and Revenue](https://github.com/user-attachments/assets/cb3c8749-3389-4a34-8a65-f85fa91b795f)
 
-		1. [Click here to view the SQL query for Yearly Sales Quantity and Revenue Analysis](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L57-L70)
+		[Click here to view the SQL query](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L56-L67)
 		  		
  	2. The quarterly analysis reveals growth in both quantity and revenue during Q1 and Q2, with Q1 recording the highest performance. However, Q3 experienced a decline in both metrics. The result of the query is shown below.
 		
@@ -100,14 +100,14 @@ During the data cleaning and preparation phase, I carried out the following acti
 		| Q2	  | 46.2% Increase		| 40.2% Increase 	      | 
 		| Q3	  | 25% Decrease		| 21.3% Decrease 	      |
 
-		[Click here to view the SQL query for the year-wise quarterly Sales Quantity and Revenue analysis](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L84-L102)
+		[Click here to view the SQL query for the year-wise quarterly Sales Quantity and Revenue analysis](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L70-L91)
   		
   
   	3. Further monthly analysis revealed a 25% revenue decline in May, dropping from ₦300,000 in 2023 to ₦225,000 in 2024. A more significant drop occurred in July, with revenue dropping from ₦1,200,000 in 2023 to ₦187,500 in 2024—a decrease of 84.4%. Conversely, January 2024 saw the highest increase, with revenue rising by 300%, from ₦250,000 in 2023 to ₦1,000,000.
 
 		![Monthly Quantity and Revenue](https://github.com/user-attachments/assets/c0c0c401-3bc4-4496-ba35-ee389f5635b4)
 
-		[Click here to view the SQL query for the year-wise monthly sales quantity and generated revenue](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L124-L162)
+		[Click here to view the SQL query for the year-wise monthly sales quantity and generated revenue](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L93-L113)
 	
 - **Product Analysis:** This section explores the quantity of products sold and the corresponding revenue generated, highlighting trends and variations over the year. The analysis identified shoes, hats, and shirts as the top-selling products by both quantity and revenue. However, shirt sales and revenue declined over time. While shoes and shirts generated the highest revenues; ₦3,087,500 and ₦2,450,000 respectively, contributing 34% and 27% of total revenue, hats recorded the highest growth, increasing from ₦262,500 in 2023 to ₦1,150,000 in 2024, a 338% rise. Socks, though the lowest-selling product, showed growth in both quantity sold and revenue between 2023 and 2024. The trends are shown below.
 
@@ -151,7 +151,7 @@ During the data cleaning and preparation phase, I carried out the following acti
 
 		![Full Yearly](https://github.com/user-attachments/assets/985abb61-9b36-4ebb-ad40-ce8fee1e00f9)
 
-   		[Click here to view the SQL Query](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L255-L267)
+   		[Click here to view the SQL Query](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L204-L215)
 
 	- **The quarterly breakdown shows that:**
 		
@@ -160,7 +160,7 @@ During the data cleaning and preparation phase, I carried out the following acti
  
 		![Full Quarterly](https://github.com/user-attachments/assets/ed0e9754-abf1-4a0f-9e76-f1562788c722)
 
-		[Click here to view the SQL Query](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L269-L291)
+		[Click here to view the SQL Query](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L217-L239)
   
 	- **The monthly analysis within Q3 and Q4 further highlights the trends:**
  
@@ -169,7 +169,7 @@ During the data cleaning and preparation phase, I carried out the following acti
 
 		![Full Monthly](https://github.com/user-attachments/assets/cf42a898-b16d-4edd-8968-8802769b8f85)
 
-		[Click here to view the SQL Query](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L293-L313)
+		[Click here to view the SQL Query](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L241-L261)
 
 ### Visualizations
 - A dashboard illustrating comparative monthly and quarterly revenue trends for 2023 and 2024 (January to August)
