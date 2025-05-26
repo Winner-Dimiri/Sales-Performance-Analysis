@@ -155,11 +155,6 @@ JOIN Product_Data2024 AS s
 ON f.Product = s.Product
 ORDER BY GeneratedRevenue_NGN2024 DESC
 
-select Distinct UnitPrice, OrderDate, sum(Quantity), sum(Revenue)
-FROM LITA_Capstone
-Where Product = 'Socks' 
-Group by OrderDate, UnitPrice
-
 
 --------------- REGIONAL ANALYSIS
 
