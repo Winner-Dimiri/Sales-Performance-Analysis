@@ -94,11 +94,11 @@ During the data cleaning and preparation phase, I carried out the following acti
 		
 		![Quarterly Quantity and Revenue](https://github.com/user-attachments/assets/e46123ce-4d7a-48c8-bed8-8760c4a05df3)
   
-		| Quarter |Quantity Remark Across Year	| Revenue Remark Across Year  |
-		|---------|-----------------------------|-----------------------------|
-		| Q1	  | 31.8% Increase  	        | 57.4% Increase 	      | 
-		| Q2	  | 46.2% Increase		| 40.2% Increase 	      | 
-		| Q3	  | 25% Decrease		| 21.3% Decrease 	      |
+		| Quarter |Quantity Remark Across the Year	| Revenue Remark Across the Year  |
+		|---------|-------------------------------------|---------------------------------|
+		| Q1	  | 31.8% Increase  	                | 57.4% Increase 	          | 
+		| Q2	  | 46.2% Increase		        | 40.2% Increase 	          | 
+		| Q3	  | 25% Decrease		        | 21.3% Decrease 	          |
 
 		[Click here to view the SQL query for the year-wise quarterly Sales Quantity and Revenue analysis](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L70-L91)
   		
@@ -116,14 +116,14 @@ During the data cleaning and preparation phase, I carried out the following acti
 	![Pro-wise quan and rev  by yearPNG](https://github.com/user-attachments/assets/7f6e01fa-eaf5-4681-857c-61d78abdfae9)
 
 
-  	|Product | Quantity Remark Across Year | Revenue Remark Across Year  |
-  	|--------|-----------------------------|-----------------------------|
-  	| Shoes  | 7.1% Increase  	         | 20.5% Increase   	       |
-  	| Hat	   | 157% Increase  		 | 338.1% Increase  	       |
-  	| Shirt  | 53.6% Decrease 	         | 31% Decrease     	       |
-  	| Gloves | 50% Increase   		 | 50% Increase     	       |
-  	| Jacket | 33.3% Increase 		 | 25% Decrease     	       |
-  	| Socks  | 33.3% Increase 	 	 | 433.3% Increase 	       |
+  	|Product | Quantity Remark Across the Year | Revenue Remark Across the Year  |
+  	|--------|---------------------------------|---------------------------------|
+  	| Shoes  | 7.1% Increase  	           | 20.5% Increase   	             |
+  	| Hat	   | 157% Increase  		   | 338.1% Increase  	             |
+  	| Shirt  | 53.6% Decrease 	           | 31% Decrease     	             |
+  	| Gloves | 50% Increase   		   | 50% Increase       	     |
+  	| Jacket | 33.3% Increase 		   | 25% Decrease     	             |
+  	| Socks  | 33.3% Increase 	 	   | 433.3% Increase 	             |
   
 	1. [Click here to view the SQL query for product-wise quantity sold and revenue generated](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L119-L136)
 	2. [Click here for the SQL query for the product sales quantity and revenue across the years](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L139-L156)
@@ -134,12 +134,12 @@ During the data cleaning and preparation phase, I carried out the following acti
 
 	![Region Quantity and revenue by year](https://github.com/user-attachments/assets/fdc47a39-dae7-409d-bc1c-01eb71896685)
 
-  	|Region | Quantity Remark Across Year |Revenue Remark Across Year |
-  	|-------|-----------------------------|---------------------------|
-  	| South | 22.2% Increase 		| 28.6% Increase  	    |
-  	| North | 57.1% Increase 		| 122.7% Increase 	    |
-  	| West  | 57.1% Increase		| 473.3% Increase 	    |
-  	| East  | 15% Decrease   		| 68.4% Decrease  	    |
+  	|Region | Quantity Remark Across the Year |Revenue Remark Across the Year |
+  	|-------|---------------------------------|-------------------------------|
+  	| South | 22.2% Increase 		  | 28.6% Increase      	  |
+  	| North | 57.1% Increase 		  | 122.7% Increase 	          |
+  	| West  | 57.1% Increase		  | 473.3% Increase 	          |
+  	| East  | 15% Decrease   		  | 68.4% Decrease  	          |
 
 	
 	1. [Click here to view the SQL query of quantity sold and revenue generated across the regions](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L166-L181)
