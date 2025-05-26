@@ -89,6 +89,9 @@ During the data cleaning and preparation phase, I carried out the following acti
 		| 2024       | 150,000                           | 5,012,500                   |
 		| **Remark** | **18% Increase in Sales Quantity**| **27% Increase in Revenue** |
 
+![Yearly Quantity Sold](https://github.com/user-attachments/assets/28795f50-68c4-43f7-a59a-8b75a77a4e96)
+![Yearly Sales Revenue](https://github.com/user-attachments/assets/fc51dc60-a516-4ae7-9c6e-c6f40519a070)
+
 		1. [Click here to view the SQL query for Yearly Sales Quantity Analysis](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L57-L70)
 		2. [Click here to view the SQL query for Yearly Revenue Analysis](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L72-L82)
   		
