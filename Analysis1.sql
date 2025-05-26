@@ -45,35 +45,20 @@ UPDATE #FILTERED_SDATA
 SELECT * FROM #FILTERED_SDATA
 
 --------------- UNIVARIATE ANALYSIS
----- Calculating Total Quantity Sold
-SELECT SUM(Quantity) AS TotalQuantity
-FROM #FILTERED_SDATA
-
----- Calculating Total Revenue
-SELECT SUM(Revenue_NGN) AS TotalRevenue_NGN
+---- Calculating Total Quantity Sold and Revenue Generated
+SELECT SUM(Quantity) AS TotalQuantity, SUM(Revenue_NGN) AS TotalRevenue_NGN
 FROM #FILTERED_SDATA
 
 
 --------------- TIME-BASED ANALYSIS
 -- In this section, we calculate the revenue generated and quantity sold by Year, Quarter, and Month for the years 2023 and 2024 (Jan. to Aug.)
 
----- Quantity Sold By Year
+---- Quantity Sold and Generated Revenue By Year
 SELECT 
 	CASE 
 		WHEN OrderYear = '2023' THEN 2023 ELSE 2024 
 	END AS Sales_Year,
-	SUM(Quantity) AS TotalQuantitySold
-FROM #FILTERED_SDATA
-GROUP BY 
-	CASE 
-		WHEN OrderYear = '2023' THEN 2023 ELSE 2024 
-	END
-
----- Revenue By Year
-SELECT 
-	CASE 
-		WHEN OrderYear = '2023' THEN 2023 ELSE 2024 
-	END AS Sales_Year,
+	SUM(Quantity) AS TotalQuantitySold,
 	SUM(Revenue_NGN) AS TotalRevenue_NGN
 FROM #FILTERED_SDATA
 GROUP BY 
@@ -81,7 +66,8 @@ GROUP BY
 		WHEN OrderYear = '2023' THEN 2023 ELSE 2024 
 	END
 
----- Quantity Sold By Quarter
+	 
+---- Quantity Sold and Revenue By Quarter
 WITH SalesData AS (
     SELECT 
         OrderYear,
@@ -90,78 +76,43 @@ WITH SalesData AS (
             WHEN OrderMonth BETWEEN 4 AND 6 THEN 'Q2'
             ELSE 'Q3'
         END AS Quarter,
-        Quantity
+        Quantity,
+		Revenue_NGN
     FROM #FILTERED_SDATA
 )
 SELECT
     Quarter,
     SUM(CASE WHEN OrderYear = '2023' THEN Quantity ELSE 0 END) AS QuantitySold2023,
-    SUM(CASE WHEN OrderYear = '2024' THEN Quantity ELSE NULL END) AS QuantitySold2024 
-FROM SalesData
-GROUP BY Quarter
-ORDER BY Quarter
-
----- Revenue By Quarter
-WITH SalesData AS (
-    SELECT 
-        OrderYear,
-        CASE 
-            WHEN OrderMonth BETWEEN 1 AND 3 THEN 'Q1'
-            WHEN OrderMonth BETWEEN 4 AND 6 THEN 'Q2'
-            ELSE 'Q3'
-        END AS Quarter,
-        Revenue_NGN
-    FROM #FILTERED_SDATA
-)
-SELECT
-    Quarter,
+    SUM(CASE WHEN OrderYear = '2024' THEN Quantity ELSE NULL END) AS QuantitySold2024,
     SUM(CASE WHEN OrderYear = '2023' THEN Revenue_NGN ELSE 0 END) AS Revenue_NGN2023,
-    SUM(CASE WHEN OrderYear = '2024' THEN Revenue_NGN ELSE NULL END) AS Revenue_NGN2024 
+    SUM(CASE WHEN OrderYear = '2024' THEN Revenue_NGN ELSE NULL END) AS Revenue_NGN2024
 FROM SalesData
 GROUP BY Quarter
 ORDER BY Quarter
 
----- Quantity Sold By Month
+---- Quantity Sold and Revenue By Month
 WITH Year2023 AS (
-	SELECT OrderMonth, SUM(Quantity) AS MonthlyQuantitySold2023
+	SELECT OrderMonth, SUM(Quantity) AS Quantity2023,
+	SUM(Revenue_NGN) AS Revenue_NGN2023
 	FROM #FILTERED_SDATA
 	WHERE OrderYear = '2023'
 	GROUP BY OrderMonth 
 	),
 Year2024 AS (
-	SELECT OrderMonth, SUM(Quantity) AS MonthlyQuantitySold2024
+	SELECT OrderMonth, SUM(Quantity) AS Quantity2024,
+	SUM(Revenue_NGN) AS Revenue_NGN2024
 	FROM #FILTERED_SDATA
 	WHERE OrderYear = '2024'
 	GROUP BY OrderMonth
 	)
 SELECT 
-	f.OrderMonth, f.MonthlyQuantitySold2023, s.MonthlyQuantitySold2024
+	f.OrderMonth, f.Quantity2023, s.Quantity2024, Revenue_NGN2023, Revenue_NGN2024
 FROM Year2023 AS f
 LEFT JOIN Year2024 AS s
 ON f.OrderMonth = s.OrderMonth
 ORDER BY f.OrderMonth
 
----- Revenue By Month
-WITH Year2023 AS (
-	SELECT OrderMonth, SUM(Revenue_NGN) AS MonthlyRevenue_NGN2023
-	FROM #FILTERED_SDATA
-	WHERE OrderYear = '2023'
-	GROUP BY OrderMonth 
-	),
-Year2024 AS (
-	SELECT OrderMonth, SUM(Revenue_NGN) AS MonthlyRevenue_NGN2024
-	FROM #FILTERED_SDATA
-	WHERE OrderYear = '2024'
-	GROUP BY OrderMonth
-	)
-SELECT 
-	f.OrderMonth, f.MonthlyRevenue_NGN2023, s.MonthlyRevenue_NGN2024
-FROM Year2023 AS f
-LEFT JOIN Year2024 AS s
-ON f.OrderMonth = s.OrderMonth
-ORDER BY f.OrderMonth
-
-
+	 
 --------------- PRODUCT ANALYSIS
 -- An analysis of the products is done in this section to know the quantities of the products sold and the revenue generated.
 
@@ -229,23 +180,20 @@ JOIN Regional_Quantity AS q
 ON r.Region = q.Region
 ORDER BY r.GeneratedRevenue_NGN DESC
 
--- In this section we calculate the regional Quantity Sold, Average Quantity Sold, Generated Revenue and Average Revenue for the Regions Over the two sales years (2023 - 2024).
+-- In this section we calculate the regional Quantity Sold and Generated Revenue for the Regions Over the two sales years (2023 - 2024).
 WITH Regional_Data2023 AS (
-	SELECT Region, SUM(Quantity) AS QuantitySold2023, AVG(Quantity) AS AverageQuantity2023, 
-		SUM(Revenue_NGN) AS GeneratedRevenue_NGN2023, AVG(Revenue_NGN) AS AverageRevenue_NGN2023
+	SELECT Region, SUM(Quantity) AS QuantitySold2023, SUM(Revenue_NGN) AS GeneratedRevenue_NGN2023
 	FROM #FILTERED_SDATA
 	WHERE OrderYear = '2023'
 	GROUP BY Region
 	),
 Regional_Data2024 AS (
-	SELECT Region, SUM(Quantity) AS QuantitySold2024, AVG(Quantity) AS AverageQuantity2024, 
-		SUM(Revenue_NGN) AS GeneratedRevenue_NGN2024, AVG(Revenue_NGN) AS AverageRevenue_NGN2024
+	SELECT Region, SUM(Quantity) AS QuantitySold2024, SUM(Revenue_NGN) AS GeneratedRevenue_NGN2024
 	FROM #FILTERED_SDATA
 	WHERE OrderYear = '2024'
 	GROUP BY Region
 	)
-SELECT f.Region, f.QuantitySold2023, AverageQuantity2023, s.QuantitySold2024, AverageQuantity2024, f.GeneratedRevenue_NGN2023, 
-	   f.AverageRevenue_NGN2023, s.GeneratedRevenue_NGN2024, s.AverageRevenue_NGN2024
+SELECT f.Region, f.QuantitySold2023, s.QuantitySold2024, f.GeneratedRevenue_NGN2023, s.GeneratedRevenue_NGN2024
 FROM Regional_Data2023 AS f
 JOIN Regional_Data2024 AS s
 ON f.Region = s.Region
@@ -285,28 +233,28 @@ SELECT
     SUM(CASE WHEN OrderYear = '2023' THEN Quantity ELSE 0 END) AS Quantity_2023,
     COALESCE(CAST(SUM(CASE WHEN OrderYear = '2024' THEN Quantity ELSE NULL END) AS VARCHAR),' ') AS Quantity_2024, 
 	SUM(CASE WHEN OrderYear = '2023' THEN Revenue_NGN ELSE 0 END) AS Revenue_NGN2023,
-    COALESCE(CAST(SUM(CASE WHEN OrderYear = '2024' THEN Revenue_NGN ELSE NULL END) AS VARCHAR),' ') AS RevenueNGN_2024 
+    COALESCE(CAST(SUM(CASE WHEN OrderYear = '2024' THEN Revenue_NGN ELSE NULL END) AS VARCHAR),' ') AS Revenue_NGN2024 
 	FROM SalesData
 GROUP BY Quarter
 ORDER BY Quarter
 
 -- By Month: calculating the total quantity and revenue for the two years (2023 full year and 2024 January to August)
 WITH Year2023 AS (
-	SELECT OrderMonth, SUM(Quantity) AS MonthlyQuantity2023, SUM(Revenue_NGN) AS MonthlyRevenue_NGN2023
+	SELECT OrderMonth, SUM(Quantity) AS Quantity2023, SUM(Revenue_NGN) AS Revenue_NGN2023
 	FROM LITA_Capstone
 	WHERE OrderYear = '2023'
 	GROUP BY OrderMonth 
 	),
 Year2024 AS (
-	SELECT OrderMonth, SUM(Quantity) AS MonthlyQuantity2024, SUM(Revenue_NGN) AS MonthlyRevenue_NGN2024
+	SELECT OrderMonth, SUM(Quantity) AS Quantity2024, SUM(Revenue_NGN) AS Revenue_NGN2024
 	FROM LITA_Capstone
 	WHERE OrderYear = '2024'
 	GROUP BY OrderMonth
 	)
 SELECT 
-	f.OrderMonth, f.MonthlyQuantity2023, f.MonthlyRevenue_NGN2023, 
-	COALESCE(CAST(s.MonthlyQuantity2024 AS VARCHAR), ' ') AS MonthlyQuantity2024, 
-	COALESCE(CAST(s.MonthlyRevenue_NGN2024 AS VARCHAR), ' ') AS MonthlyRevenue_NGN2024
+	f.OrderMonth, f.Quantity2023, f.Revenue_NGN2023, 
+	COALESCE(CAST(s.Quantity2024 AS VARCHAR), ' ') AS Quantity2024, 
+	COALESCE(CAST(s.Revenue_NGN2024 AS VARCHAR), ' ') AS Revenue_NGN2024
 FROM Year2023 AS f
 LEFT JOIN Year2024 AS s
 ON f.OrderMonth = s.OrderMonth
