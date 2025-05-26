@@ -41,14 +41,14 @@
 
 - **Dataset Structure:** The dataset contains the following data fields, as described below:
 
-| Column      | Description                         |
-|-------------|-------------------------------------|
-| OrderID     | Unique identifier for each order    |
-| CustomerID  | Unique identifier for each customer |
-| Product     | Name of the product sold            |
-| Region      | Geographical region of the sale     |
-| OrderDate   | Date of the transaction             |
-| Quantity    | Number of units sold                |
+	| Column      | Description                         |
+	|-------------|-------------------------------------|
+	| OrderID     | Unique identifier for each order    |
+	| CustomerID  | Unique identifier for each customer |
+	| Product     | Name of the product sold            |
+	| Region      | Geographical region of the sale     |
+	| OrderDate   | Date of the transaction             |
+	| Quantity    | Number of units sold                |
 
 The product categories include Shoes, Hats, Shirts, Gloves, Jackets, and Socks, while the sales regions are East, West, North, and South.
 
@@ -125,8 +125,8 @@ During the data cleaning and preparation phase, I carried out the following acti
   	| Jacket | 33.3% Increase 		 | 25% Decrease     	       |
   	| Socks  | 33.3% Increase 	 	 | 433.3% Increase 	       |
   
-	1. [Click here to view the SQL query for product-wise quantity sold and revenue generated](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L168-L185)
-	2. [Click here for the SQL query for the product sales quantity and revenue across the years](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L188-L210)
+	1. [Click here to view the SQL query for product-wise quantity sold and revenue generated](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L119-L136)
+	2. [Click here for the SQL query for the product sales quantity and revenue across the years](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L139-L156)
 
 - **Regional Analysis:** To evaluate regional contributions to sales and revenue generation, this section provides a detailed performance analysis across different regions. The South region recorded the highest sales and revenue while the East region had the lowest performance. The result is shown below.
 
@@ -142,8 +142,8 @@ During the data cleaning and preparation phase, I carried out the following acti
   	| East  | 15% Decrease   		| 68.4% Decrease  	    |
 
 	
-	1. [Click here to view the SQL query of quantity sold and revenue generated across the regions](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L213-L230)
-	2. [Click here to view the SQL query showing the quantity sold and revenue generated across regions for both years](https://github.com/Winner360/My_first_project/blob/main/Analysis1.sql#L232-L252)
+	1. [Click here to view the SQL query of quantity sold and revenue generated across the regions](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L166-L181)
+	2. [Click here to view the SQL query showing the quantity sold and revenue generated across regions for both years](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L183-L200)
 
 - **Analysis with the complete 2023 dataset:** This section presents a comprehensive analysis of the quantity sold and revenue generated across 2023 and 2024, with the complete dataset for 2023 (January to December).
 
