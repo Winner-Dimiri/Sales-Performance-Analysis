@@ -174,9 +174,9 @@ During the data cleaning and preparation phase, I carried out the following acti
 ### Visualizations
 - A dashboard illustrating comparative monthly and quarterly revenue trends for 2023 and 2024 (January to August)
 
-![Tableau Dashboard](https://github.com/user-attachments/assets/ec8acb73-d923-4ffc-92f9-dc4cdece5a32)
+![Github Sales Analysis Screenshot](https://github.com/user-attachments/assets/4fdef267-134e-4a26-8391-c151095bd577)
 
-- [Click here to view the dashboard for the Comparative Revenue Trends (Jan–Aug): 2023 vs 2024](https://public.tableau.com/app/profile/winner.dimiri/viz/Sales_Analysis_Visualizations1/ComparativeRevenueTrendsJanAug2023vs2024)
+- [Click here to view the full Sales Performance Overview (Jan–Aug): 2023 vs 2024](https://public.tableau.com/app/profile/winner.dimiri/viz/Sales_Analysis_Visualizations1/ComparativeRevenueTrendsJanAug2023vs2024)
 - [Click here to view the dashboard for the Regional Sales Performance Overview (Jan - Aug)](https://public.tableau.com/app/profile/winner.dimiri/viz/Sales_Analysis_Visualizations2/RegionalSalesPerformanceOverviewJan-Aug)
 - [Clich here to view the dashboard for the Comparative Quantity Trends (Jan–Aug): 2023 vs 2024](https://public.tableau.com/app/profile/winner.dimiri/viz/Sales_Analysis_Visualizations3/ComparativeQuantityTrendsJanAug2023vs2024)
 - [Click here to view the dashboard for the Product Performance Overview (Jan - Aug)](https://public.tableau.com/app/profile/winner.dimiri/viz/Sales_Analysis_Visualizations4/ProductPerformanceOverviewJan-Aug)
