@@ -173,17 +173,15 @@ During the data cleaning and preparation phase, I carried out the following acti
 
 ### Visualizations
 - A dashboard illustrating Sales Trends and Performaces for 2023 and 2024 (January to August)
-- 
+ 
 ![Sales Dataset Visual](https://github.com/user-attachments/assets/5b38f693-93d2-4433-82fc-52542f9beb95)
 
-	[Click here to view the full dashboard](https://public.tableau.com/app/profile/winner.dimiri/viz/Sales_Analysis_Visualizations1/ComparativeRevenueTrendsJanAug2023vs2024)
-
+[Click here to view the full dashboard](https://public.tableau.com/app/profile/winner.dimiri/viz/SalesTrendsandPerformanceOverviewJan-Aug/SalesTrendsandPerformanceOverviewJanAug2023vs2024)
 
 - A dashboard illustrating Sales Trends and Performaces with the complete 2023 dataset
-- 
-![Complete Sales DataSet Visual](https://github.com/user-attachments/assets/6b05e781-738e-48c7-83a2-27ff58038b8f)
+ ![Full Year Sales Trend](https://github.com/user-attachments/assets/b4a767bd-99e7-4733-9ff3-95df5a9d7bc8)
 
-	[Click here to view the full dashboard](https://public.tableau.com/app/profile/winner.dimiri/viz/Sales_Analysis_Visualizations2/RegionalSalesPerformanceOverviewJan-Aug)
+[Click here to view the full dashboard](https://public.tableau.com/app/profile/winner.dimiri/viz/SalesTrendsandPerformanceOverviewWith2023CompleteDatasetJan-Aug/SalesTrendsandPerformanceOverviewwith2023CompleteDataset)
 
 
 ### Insights
