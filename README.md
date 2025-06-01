@@ -147,7 +147,7 @@ During the data cleaning and preparation phase, I carried out the following acti
 
 - **Analysis with the complete 2023 dataset:** This section presents a comprehensive analysis of the quantity sold and revenue generated across 2023 and 2024, with the complete dataset for 2023 (January to December).
 
-	- **The yearly analysis reveals that:** in 2023, a total of 195,000 units were sold, generating a total revenue of ₦5,575,000.
+	- **The yearly analysis reveals that:** in 2023, a total of 195,000 units were sold, generating a total revenue of ₦5,575,000, while in 2024, a total of 150,000 units were sold, generating a total of ₦5,012,500.
 
 		![Full Yearly](https://github.com/user-attachments/assets/985abb61-9b36-4ebb-ad40-ce8fee1e00f9)
 
@@ -172,15 +172,19 @@ During the data cleaning and preparation phase, I carried out the following acti
 		[Click here to view the SQL Query](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L241-L261)
 
 ### Visualizations
-- A dashboard illustrating comparative monthly and quarterly revenue trends for 2023 and 2024 (January to August)
+- A dashboard illustrating Sales Trends and Performaces for 2023 and 2024 (January to August)
+- 
+![Sales Dataset Visual](https://github.com/user-attachments/assets/5b38f693-93d2-4433-82fc-52542f9beb95)
 
-![Github Sales Analysis Screenshot](https://github.com/user-attachments/assets/4fdef267-134e-4a26-8391-c151095bd577)
+	[Click here to view the full dashboard](https://public.tableau.com/app/profile/winner.dimiri/viz/Sales_Analysis_Visualizations1/ComparativeRevenueTrendsJanAug2023vs2024)
 
-- [Click here to view the full Sales Performance Overview (Jan–Aug): 2023 vs 2024](https://public.tableau.com/app/profile/winner.dimiri/viz/Sales_Analysis_Visualizations1/ComparativeRevenueTrendsJanAug2023vs2024)
-- [Click here to view the dashboard for the Regional Sales Performance Overview (Jan - Aug)](https://public.tableau.com/app/profile/winner.dimiri/viz/Sales_Analysis_Visualizations2/RegionalSalesPerformanceOverviewJan-Aug)
-- [Clich here to view the dashboard for the Comparative Quantity Trends (Jan–Aug): 2023 vs 2024](https://public.tableau.com/app/profile/winner.dimiri/viz/Sales_Analysis_Visualizations3/ComparativeQuantityTrendsJanAug2023vs2024)
-- [Click here to view the dashboard for the Product Performance Overview (Jan - Aug)](https://public.tableau.com/app/profile/winner.dimiri/viz/Sales_Analysis_Visualizations4/ProductPerformanceOverviewJan-Aug)
-- [Click here to view the dashboard for the Comparative Revenue Trends: 2023 (Complete dataset) vs 2024](https://public.tableau.com/app/profile/winner.dimiri/viz/Sales_Analysis_Visualizations5/ComparativeRevenueTrends2023vs2024)
+
+- A dashboard illustrating Sales Trends and Performaces with the complete 2023 dataset
+- 
+![Complete Sales DataSet Visual](https://github.com/user-attachments/assets/6b05e781-738e-48c7-83a2-27ff58038b8f)
+
+	[Click here to view the full dashboard](https://public.tableau.com/app/profile/winner.dimiri/viz/Sales_Analysis_Visualizations2/RegionalSalesPerformanceOverviewJan-Aug)
+
 
 ### Insights
 - **Time-based Performance**
