@@ -142,8 +142,8 @@ During the data cleaning and preparation phase, I carried out the following acti
   	| East  | 15% Decrease   		  | 68.4% Decrease  	          |
 
 	
-	1. [Click here to view the SQL query of quantity sold and revenue generated across the regions](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L166-L181)
-	2. [Click here to view the SQL query showing the quantity sold and revenue generated across regions for both years](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L183-L200)
+	1. [Click here to view the SQL query of quantity sold and revenue generated across the regions](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L161-L176)
+	2. [Click here to view the SQL query showing the quantity sold and revenue generated across regions for both years](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L178-L195)
 
 - **Analysis with the complete 2023 dataset:** This section presents a comprehensive analysis of the quantity sold and revenue generated across 2023 and 2024, with the complete dataset for 2023 (January to December).
 
@@ -151,7 +151,7 @@ During the data cleaning and preparation phase, I carried out the following acti
 
 		![Full Yearly](https://github.com/user-attachments/assets/985abb61-9b36-4ebb-ad40-ce8fee1e00f9)
 
-   		[Click here to view the SQL Query](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L204-L215)
+   		[Click here to view the SQL Query](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L199-L210)
 
 	- **The quarterly breakdown shows that:**
 		
@@ -160,7 +160,7 @@ During the data cleaning and preparation phase, I carried out the following acti
  
 		![Full Quarterly](https://github.com/user-attachments/assets/ed0e9754-abf1-4a0f-9e76-f1562788c722)
 
-		[Click here to view the SQL Query](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L217-L239)
+		[Click here to view the SQL Query](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L212-L234)
   
 	- **The monthly analysis within Q3 and Q4 further highlights the trends:**
  
@@ -169,7 +169,7 @@ During the data cleaning and preparation phase, I carried out the following acti
 
 		![Full Monthly](https://github.com/user-attachments/assets/cf42a898-b16d-4edd-8968-8802769b8f85)
 
-		[Click here to view the SQL Query](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L241-L261)
+		[Click here to view the SQL Query](https://github.com/Winner-Dimiri/My_first_project/blob/main/Analysis1.sql#L236-L256)
 
 ### Visualizations
 - A dashboard illustrating Sales Trends and Performaces for 2023 and 2024 (January to August)
