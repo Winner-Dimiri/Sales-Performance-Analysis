@@ -202,7 +202,7 @@ During the data cleaning and preparation phase, I carried out the following acti
 	- The South region emerged as the highest-performing region in both sales and revenue generation.
 	- The North and West regions recorded significant year-on-year growth across both sales and revenue, suggesting rising market potential or improved distribution efforts.
 	- The East region had the lowest performance and experienced a considerable drop in revenue, signaling strategic reevaluation.
-- Analysis of the complete 2023 dataset revealed a 4.61% decline in Q4 performance. Additionally, sales and revenue increased from September to October, followed by a decline in both metrics from November to December.
+- Analysis of the complete 2023 dataset revealed a 4.61% decline in Q4 performance. Additionally, sales and revenue increased from September to October, followed by a decline in both metrics from November to December, despite the festive season.
 
 ### Recommendations
 - Investigate and address the Q3 and July performance dip.
@@ -211,7 +211,10 @@ During the data cleaning and preparation phase, I carried out the following acti
 - Expand and optimize sales and distribution in high-performing South and North regions.
 - Investigate and revitalize the East region with localized strategies and market research.
 - Invest more in hats and socks, which have shown notable growth, to maximize revenue.
-- Revivee shirt sales through product innovation, bundle offers, or targeted promotions to reverse the declining trend.
+- Revive shirt sales through product innovation, bundle offers, or targeted promotions to reverse the declining trend.
+- Analyze December’s underperformance to uncover and address issues affecting festive sales. Plan early campaigns, stock management, and targeted promotions to boost future December performance.
+
+
 
 
 
