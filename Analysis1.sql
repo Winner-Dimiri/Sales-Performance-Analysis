@@ -116,7 +116,7 @@ ORDER BY f.OrderMonth
 --------------- PRODUCT ANALYSIS
 -- An analysis of the products is done in this section to know the quantities of the products sold and the revenue generated.
 
--- We want to calculate the total quantity sold and total revenue generated for the products in the years 2023 and 2024 (January to August)
+-- Here, we calculate the total quantity sold and total revenue generated for the products in the years 2023 and 2024 (January to August)
 WITH Revenue_Generated AS (
 	SELECT 
 		Product, 
@@ -136,7 +136,7 @@ ON r.Product = q.Product
 ORDER BY r.TotalRevenue_NGN DESC
 
 
--- We want to calculate in this section, the quantities sold and generated revenue for the products per year.
+-- In this section, we calculate the quantities sold and generated revenue for the products per year.
 WITH Product_Data2023 AS (
 	SELECT Product, SUM(Quantity) AS Quantity_Sold2023, SUM(Revenue_NGN) AS GeneratedRevenue_NGN2023
 	FROM #FILTERED_SDATA
@@ -158,7 +158,7 @@ ORDER BY GeneratedRevenue_NGN2024 DESC
 
 --------------- REGIONAL ANALYSIS
 
--- Calculating the regional total quantity sold and generated revenue for the two sales years, 2023 and 2024 (Jan. to Aug.)
+-- Here, we calculate the regional total quantity sold and generated revenue for the two sales years, 2023 and 2024 (Jan. to Aug.)
 WITH RegionalRevenue_NGN AS (
 	SELECT Region, SUM(Revenue_NGN) AS GeneratedRevenue_NGN
 	FROM #FILTERED_SDATA
@@ -175,7 +175,7 @@ JOIN Regional_Quantity AS q
 ON r.Region = q.Region
 ORDER BY r.GeneratedRevenue_NGN DESC
 
--- In this section we calculate the regional Quantity Sold and Generated Revenue for the Regions Over the two sales years (2023 - 2024).
+-- In this section, we calculate the regional Quantity Sold and Generated Revenue for the Regions Over the two sales years (2023 - 2024).
 WITH Regional_Data2023 AS (
 	SELECT Region, SUM(Quantity) AS QuantitySold2023, SUM(Revenue_NGN) AS GeneratedRevenue_NGN2023
 	FROM #FILTERED_SDATA
